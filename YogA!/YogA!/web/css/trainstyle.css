@@ -1,0 +1,75 @@
+html{
+	margin: -1em;
+	background: url("../ExtraFiles/Background.png") no-repeat;
+}
+ body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+canvas {
+  display: block;
+  position: absolute;
+}
+.p5Canvas{
+
+align-items:center;
+}
+
+
+video,#defaultCanvas0{
+	position: absolute;
+	position: fixed;
+	top: 7em;
+	margin-left: 3%;
+	margin-right:20%; 
+	border-radius:3rem;
+	width: 80%;
+	height: 500px;
+	display: flex;
+	background:linear-gradient(red,yellow);
+}
+buttons{
+	width: 600px;
+	position: fixed;
+	bottom: 2em;
+	left: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
+	
+}
+button{
+	padding: 3px 4px;
+	margin: 56px 3px;
+	border: none;
+	background-color: lightcoral;
+	outline-style: none;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+	box-shadow: 4px 4px rgba(5, 5, 5, 0.8);
+
+}
+button:active{
+	outline: none;
+	color: rgba(5, 5, 5, 0.8);
+	background-color: rgba(245, 8, 8, 0.8);
+
+}
+#add canvas{
+	grid-column:1;
+	grid-row: 1/span 2;
+}
+#label{
+	position: fixed;
+	text-align: center;
+	background-color: slateblue;
+	padding: 2px 2em;
+	top: 2%;
+	left: 1em;
+	font-size: 10vh;
+	font-weight: 7px;
+	color: seashell;
+
+}

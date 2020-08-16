@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(69, 5, 82, 0.9);
+    overflow: hidden;
+}
+.container{
+    text-align: center;
+    align-items: center;
+}
+
+#orange1,#purple,#red,#yellow{
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+#red2,#orange{
+    transition: 0.7s;
+    transform: translateX(0px);
+
+}
+#form1 a{
+            text-decoration: none;
+            color: white;
+        }
+.formbox {
+
+    min-height: 300px;
+    transition: 2s;
+    min-width: 80vh;
+    position: absolute;
+    top: 10vh;
+    right: 0px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.formbox form{
+    font-size: 20px;
+    
+    margin-top: 5em;
+    background-color: rgba(69, 5, 82, 0.3);
+    padding: 2em 2em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.formbox form input:nth-child(4){
+    height: 5vh;
+    width: 30vh;
+    color: lavenderblush;
+    font-size: 20px;
+    text-align: center;
+    border:none;
+    outline-style: none;
+    background-color:rgba(69, 5, 82, 0.8);
+    box-shadow: 4px 5px 10px rgb(112, 11, 138),
+    -3px -4px 10px rgb(146, 64, 240);
+
+}
+.formbox form h4{
+    color: rgb(252, 252, 252);
+    font-family: monospace;
+    font-size: 1.2em;
+}
+.formbox form input:nth-child(2){
+    height: 5vh;
+    color: lavenderblush;
+    font-size: 20px;
+    width: 30vh;
+    border:none;
+    outline-style: none;
+    text-align: center;
+    background-color:rgba(69, 5, 82, 0.8);
+    box-shadow: 4px 5px 10px rgb(112, 11, 138),
+    -3px -4px 10px rgb(146, 64, 240);
+}
+
+.formbtn{
+    cursor: pointer;
+    border: none;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    background-color:rgba(69, 5, 82, 0.8);
+    box-shadow: 4px 5px 10px rgb(37, 36, 36),
+    -3px -4px 10px rgb(82, 81, 81);
+}
+.formbtn:active{
+    border: none;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    width: 150px;
+    height: 50px;
+    outline-style: none;
+    background-color:rgba(98, 9, 116, 0.8);
+    box-shadow: inset -4px -5px 10px rgb(82, 81, 81),
+    inset 3px 4px 10px rgb(22, 22, 22);
+}
+
+#Layer_1 g a g:hover,#logout:hover{
+    stroke: rgb(252, 252, 252);
+ transform:scaleX(1.008); 
+ 
+}
+
+/*logo css ####################### */
+
+#le{
+	animation: le 2s infinite; 
+	transform-origin: bottom;
+	transform-box:fill-box; 
+}
+@keyframes le{
+	0%{transform: rotateZ(10deg);}
+	50%{transform: rotateZ(-10deg);}
+	100%{transform: rotateZ(10deg);}
+}
+#leaf{
+	width: 20em;
+	height: 20em;
+	transform: translate(50%,60%);
+}
+#l1,#l2,#l3{
+	animation:leaf 6s infinite;
+	transform-origin: bottom;
+}
+@keyframes leaf{
+	0%{transform: rotateZ(6deg);}
+	50%{transform: rotateZ(-0deg);}
+	100%{transform: rotateZ(6deg);}
+}
+/*#f1{z-index: -;}*/
+#two{
+	padding: 0px;
+	transition: 1s;
+	position: absolute;
+        margin-left: 8%;
+        top: 27%;
+}
+#hand{
+	animation: hnd 6s infinite;
+	transform-origin: bottom;
+}
+@keyframes hnd{
+	0%{transform: rotateZ(90deg);transform: translateY(10px);}
+	50%{transform: rotateZ(-0deg);transform: translateY(0px);}
+	100%{transform: rotateZ(6deg);transform: translateY(10px);}
+}
+#leg{
+	animation: leg 6s infinite;
+	transform-origin: bottom;
+}
+@keyframes leg{
+	0%{transform: rotateZ(5deg);}
+	50%{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(5deg);}
+}
+#leg2{
+	animation: leg2 6s infinite;
+	transform-origin: bottom;
+	transform-box:fill-box; 
+}
+@keyframes leg2{
+	0%{transform: rotateZ(-9deg);}
+	50%{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(-9deg);}
+}
+#bady{
+	animation: bay 6s infinite;
+	transform-origin: center;
+	transform-box:fill-box; 
+}
+@keyframes bay{
+	0%{transform: rotateZ(-6deg);transform: translateY(11px);}
+	50%{transform: rotateZ(-0deg);transform: translateY(0px);}
+	100%{transform: rotateZ(-6deg);transform: translateY(11px);}
+}
+#legt{
+	animation: th 6s infinite;
+	transform-origin: bottom;
+	transform-box:fill-box; 
+}
+@keyframes th{
+	0%{transform: rotateZ(6deg);transform: translate(-2px,11px);}
+	50%{transform: rotateZ(-0deg);transform: translate(0px);}
+	100%{transform: rotateZ(6deg);transform: translate(-2px,11px);}
+}
+#nav{
+        transition: 1s;
+        transform: translateX(-5%);
+    }
+@media only screen and (max-width:800px){
+    #nav{
+        transition: 1s;
+        transform: translateX(-25%);
+    }
+}

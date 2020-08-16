@@ -1,0 +1,65 @@
+.container{
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	align-items: center;
+}
+
+#font_a,#font_y{
+	/* stroke:#edb521; */
+	stroke-width: 2px;
+	stroke-dasharray: 600px;
+	stroke-dashoffset:20px;
+	animation: dash 10s alternate-reverse infinite;
+
+}
+@keyframes dash{
+	0%{stroke-dasharray:200px;}
+	100%{stroke-dasharray: 20px;}
+}
+#font_x5F_g2{
+	stroke: aqua;
+	animation: g2 2s alternate-reverse infinite;
+	transform-origin:top ;
+	transform-box: fill-box;
+
+}
+@keyframes g2{
+	0%{stroke-dasharray:200px;
+		transform: rotateZ(0deg);}
+	50%{stroke-dasharray: 20px;
+		transform: rotateZ(40deg)}
+		50%{stroke-dasharray: 20px;
+			transform: rotateZ(10deg)}	
+	100%{stroke-dasharray: 200px;
+		transform: rotateZ(0deg)}
+}
+
+#ball2{
+	stroke: aqua;
+	animation: b2 2s linear infinite;
+	transform-origin:center ;
+	transform-box: fill-box;
+}
+
+@keyframes b2{
+	0%{	transform: translateY(0px) scaleY(1);}
+
+	10%{transform: translateY(20px) scaleY(0.8);}
+	
+	40%{transform: translateY(-10px) scaleY(1);}
+	
+	60%{transform: translateY(20px) scaleY(0.8);}
+	
+	100%{transform: translateY(1px) scaleY(1);}
+}
+
+#ball_x5F_1{
+	animation: b1 2s linear infinite;
+	transform-origin:center ;
+	transform-box: fill-box;
+}
+@keyframes b1{
+	0%{transform: rotateZ(0deg) scale(1.2);}
+	50%{transform: rotateZ(180deg) scale(1);}
+	100%{transform: rotateZ(360deg) scale(1.2);}
+}
