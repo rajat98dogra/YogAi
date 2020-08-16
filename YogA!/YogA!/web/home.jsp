@@ -88,6 +88,9 @@
     box-shadow: inset -4px -5px 10px rgb(82, 81, 81),
     inset 3px 4px 10px rgb(22, 22, 22);
 }
+hr{
+    color:#fff
+}
 
 </style>
 </head>
@@ -96,9 +99,10 @@
     String m=(String)session.getAttribute("msg");
     if(m!=null){
 %>
-<hr><%= m %><hr>
+<hr><%= m %></hr>
 <%
-    session.setAttribute("msg",null);
+   
+ session.setAttribute("msg",null);
     }
 %>
     <div class="container">
@@ -898,7 +902,7 @@
                c9.469-35.729,24.518-30.927,38.598-32.085c14.081-1.158,51.476-6.463,64.359,5.388s30.098,13.977,15.155,36.774
                S1336.697,88.938,1328.285,87.614z" />
                         <text transform="matrix(1 0 0 1 1327.5 62.021)" fill="#FFFFFF" font-family="'MyriadPro-Bold'"
-                            font-size="19.3597">JOIN US</text>
+                            font-size="19.3597">SIGN UP</text>
                     </g>
                 </g>
 </a>
@@ -1912,6 +1916,8 @@ function openForm() {
     document.getElementById("form1").style.display="none";
   document.getElementById("myForm").style.display = "block";
 }
+
+
 </script>
 
 </body>

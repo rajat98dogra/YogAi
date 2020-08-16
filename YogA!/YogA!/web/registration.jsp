@@ -46,7 +46,7 @@
                         </div>
                         
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit" onclick="myFunction()">Submit</button>
+                            <button class="btn btn--pill btn--green" type="submit" >Submit</button>
                         </div>
                     </form></br>
 				    <font size="3" color="white"><p>Already have an account? </font><br><font size="4" color="pink"><a href='home.jsp'>Sign in</a></font></p>

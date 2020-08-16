@@ -28,24 +28,7 @@ function setup() {
   createCanvas(640, 480);
   video = createCapture(VIDEO);
   video.hide();
-  // button = createButton("Sukhasna")
-  // button.mousePressed(Sukhasna)
-  // button = createButton("Virabhadrasana II")
-  // button.mousePressed(Virabhadrasana_II)
-  // button = createButton("Kursiasana")
-  // button.mousePressed(Kursiasana)
-  // button = createButton("Trikonasana")
-  // button.mousePressed(Trikonasana)
-  // button = createButton("Virabhadrasana I")
-  // button.mousePressed(Virabhadrasana_I)
-  // button = createButton("Chaturanga")
-  // button.mousePressed(Chaturanga)
-  // button = createButton("Vrikshasana")
-  // button.mousePressed(Vrikshasana)
-  // button = createButton("Tadasana")
-  // button.mousePressed(Tadasana)
-
-
+  
   poseNet = ml5.poseNet(video, modelLoaded);
   poseNet.on('pose', gotPoses);
 
@@ -199,7 +182,6 @@ function gotResult(error, results) {
 
 
 function gotPoses(poses) {
-  // console.log(poses); 
   if (poses.length > 0) {
     pose = poses[0].pose;
     skeleton = poses[0].skeleton;
@@ -236,11 +218,6 @@ function draw() {
   }
   pop();
 
-  // fill(255, 0, 255);
-  // noStroke();
-  // textSize(52);
-  // textAlign(TOP,CENTER);
-  // fill(255, 23, 34);
   document.getElementById("label").innerHTML = poseLabel
-  // text(poseLabel, width / 3, height / 6);
+ 
 }
